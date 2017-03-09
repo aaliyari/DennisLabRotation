@@ -9,10 +9,10 @@ ___
 
 - [x] Warm up!
 
-- Get a sample list of promoters from [FANTOM](http://pressto.binf.ku.dk/): all chr6 promoters - BED format
-- Some HSD enhancers on chr6 (DUSP22) from Paulina
-- Hi-C matrix from [Rao & Huntley et al. 2014](http://www.cell.com/abstract/S0092-8674(14)01497-4) (5kb resolution for now)
-  GEO accesion number: [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525)     
+      - Get a sample list of promoters from [FANTOM](http://pressto.binf.ku.dk/): all chr6 promoters - BED format
+      - Some HSD enhancers on chr6 (DUSP22) from Paulina
+      - Hi-C matrix from [Rao & Huntley et al. 2014](http://www.cell.com/abstract/S0092-8674(14)01497-4) (5kb resolution for now)
+        GEO accesion number: [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525)     
   
 - [x] write a python script to normalize the Hi-C matrix
 - normalization method used: KRnorm (used in Rao & Huntley et al. 2014)
