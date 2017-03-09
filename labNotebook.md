@@ -2,7 +2,9 @@
 
 Start date: Monday February 13, 2017  
 End date: Friday March 17, 2017
-
+# Goals:
+## Computational: Identify novel enhancer-promoter interactions caused by Human Specific Duplications (HSDs) using Hi-C data
+## Experimental: Validate any found contacs
 ___
 
 ## Week 1:
@@ -59,11 +61,14 @@ Duplication -> chr16:33,293,711-33,465,325
 ```
 /share/dennislab/sequencing/public/Rao_Huntley_2014/GM12878_combined_interchromosomal/*_resolution_interchromosomal/chr6_chr16
 ```
-- Input:
+- Input:  
   1) DUSP22 HSD enhancers on chr6 (BED format)  
   2) All promoters on chr16 from FANTOM (BED format)  
   3) Hi-C raw matrix (*.RAWobserved)  
   4) Normalization vectors for both chromosomes (*.KRnorm)  
+
+- Output: 
+**Interacting enhancer-promoter pairs!**
 
 ___
 
