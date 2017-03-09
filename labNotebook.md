@@ -52,10 +52,13 @@ ___
 
 - HSD region of interest: DUSP22
 ```
-Ancestral: chr6:chr6:196,309-429,124
-Duplication: chr16:33,293,711-33,465,325
+Ancestral -> chr6:chr6:196,309-429,124
+Duplication -> chr16:33,293,711-33,465,325
 ```
-**This is an interchromosomal duplication, so we need to look at the Hi-C matrix containing contacts between chromoome 6 and 16**
+**This is an interchromosomal duplication, so we need to look at the Hi-C matrix containing contacts between chromoome 6 and 16 located in (replace * with desired resolution):**
+```
+/share/dennislab/sequencing/public/Rao_Huntley_2014/GM12878_combined_interchromosomal/*_resolution_interchromosomal/chr6_chr16
+```
 
 ___
 
