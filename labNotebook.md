@@ -3,8 +3,8 @@
 Start date: Monday February 13, 2017  
 End date: Friday March 17, 2017
 # Goals:
-## Computational: Identify novel enhancer-promoter interactions caused by Human Specific Duplications (HSDs) using Hi-C data
-## Experimental: Validate any found contacs
+### Computational: Identify novel enhancer-promoter interactions caused by Human Specific Duplications (HSDs) using Hi-C data
+### Experimental: Validate any found contacts using 3C-pcr
 ___
 
 ## Week 1:
