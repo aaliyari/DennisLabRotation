@@ -44,7 +44,15 @@ ___
 - [x] Optimize the python script for finding enhancer-promoter contacts
 - Utilizing the sorted property of the input files (enhancer BED, promoted BED and Hi-C matrix), the function goes through the Hi-C file only once, reading it line by line. This is vital for the overall speed considering size of the Hi-C files (several Gigabytes).
 
-- [x]
+- [x] Run the script hoping to find some novel enhancer-promoter interactions due to HSDs!
+- Download Hi-C data from Rao & Huntley et al. 2014, available on Cabernet
+    - Human lymphoblastoid cells (GM12878)
+    
+          cd /share/dennislab/sequencing/public/Rao_Huntley_2014
+
+
+
+___
 
 ## Week 3
 ### Primer Design
