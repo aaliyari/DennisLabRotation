@@ -14,11 +14,11 @@ End date: Friday March 17, 2017
 ___
 
 ## Table of contents
-1. [Week 1](#week1)
-2. [Week 2](#week2)
-3. [Week 3](#week3)
-4. [Week 4](#week4)
-5. [Week 5](#week5)
+1. [Week one: Warm Up](#week1)
+2. [Week two: Optimize the code](#week2)
+3. [Week three: Look for novel contacts](#week3)
+4. [Week four: Experiments!](#week4)
+5. [Week 5: Wrap up](#week5)
 6. [Appendix: How to run the scripts](#appendix)
 
 ___
@@ -321,7 +321,13 @@ TARGETS (start, len)*: 231,6
                                                               
   ## <a name="week4"></a>_Week 4_
   
+  
+  
   ## <a name="week5"></a>_Week 5_
   
+  
+  
   ## <a name="appendix"></a>_Appendix: How to run the scripts_
+  
+  
   
