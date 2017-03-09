@@ -26,7 +26,7 @@ function: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in blahblah.py
 ```
 
 - [x] Find the number of contacts between promoters and enhancers using the normalized Hi-C matrix
-- *All files should be sorted, for instance:*
+- **All files should be sorted, for instance:**
 ```sh
 sort -k1,1n -k2,2n normalized_HiC.txt > sorted_normalized_HiC.txt
 ```
@@ -35,7 +35,9 @@ function: blahblah(..) in blahblah.py
 output format: enhancer BED + promoter BED + O/E + HiC line
 chr   start   end   chr   start   end   O/E   bin_i   bin_j   no. of contacts
 ```
-- The 6th column in the output file is the observed/expected value for each pair of contacting loci in the Hi-C matrix, which is a measure of the contacts significance. Expected values are provided as a seperate file (*.KRexpected) and are available for intrachromosomal contacts only.
+- The 6th column in the output file is the observed/expected value for each pair of contacting loci in the Hi-C matrix, which is a measure of the contact's significance. Expected values are provided as a seperate file (*.KRexpected) and are available for intrachromosomal contacts only.
+
+___
      
 ## Week 2
 
