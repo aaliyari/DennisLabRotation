@@ -49,7 +49,13 @@ ___
     - Human lymphoblastoid cells (GM12878)
     
             cd /share/dennislab/sequencing/public/Rao_Huntley_2014
-  
+
+- HSD region of interest: DUSP22
+```
+Ancestral: chr6:chr6:196,309-429,124
+Duplication: chr16:33,293,711-33,465,325
+```
+**This is an interchromosomal duplication, so we need to look at the Hi-C matrix containing contacts between chromoome 6 and 16**
 
 ___
 
