@@ -12,20 +12,20 @@ ___
 - Get a sample list of promoters from [FANTOM](http://pressto.binf.ku.dk/): all chr6 promoters (BED format)
 - Some HSD enhancers on chr6 (DUSP22) from Paulina (BED format)
 - Hi-C matrix from [Rao & Huntley et al. 2014](http://www.cell.com/abstract/S0092-8674(14)01497-4)  
-GEO accesion number: [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525) (5kb resolution for now)
+GEO accesion link: [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525) (5kb resolution for now)
   
 - [x] Write a python script to normalize the Hi-C matrix
 
 - Normalization method used: KRnorm (used in Rao & Huntley et al. 2014)
 ```
-Each entry M_ij of the raw Hi-C matrix should be divided by its corresponding values in the normalization vector file (*.KRnorm).
+Each entry M_ij of the raw Hi-C matrix should be divided by its corresponding values in the normalization vector file (*.KRnorm)
 ```
-- For details, please see this [readme](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE63525&format=file&file=GSE63525%5FGM12878%5Fcombined%5FREADME%2Ertf)
+- For details, please see this [readme](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE63525&format=file&file=GSE63525%5FGM12878%5Fcombined%5FREADME%2Ertf), available in the above mentioned GEO link.
 ```
 function: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in blahblah.py
 ```
 
-- [x] Find the number of contacts between promoters and enhancers using the normalized Hi-C matrix
+- [x] Find the number of contacts between each pair of promoters and enhancers using the normalized Hi-C matrix
 - **All files should be sorted, for instance:**
 ```sh
 sort -k1,1n -k2,2n normalized_HiC.txt > sorted_normalized_HiC.txt
@@ -41,7 +41,10 @@ ___
      
 ## Week 2
 
-- [ ] 
+- [x] Optimize the python script for finding enhancer-promoter contacts
+- Utilizing the sorted property of the input files (enhancer BED, promoted BED and Hi-C matrix), the function goes through the Hi-C file only once, reading it line by line. This is vital for the overall speed considering size of the Hi-C files (several Gigabytes).
+
+- [x]
 
 ## Week 3
 ### Primer Design
