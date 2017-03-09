@@ -48,9 +48,8 @@ ___
 - Download Hi-C data from Rao & Huntley et al. 2014, available on Cabernet
     - Human lymphoblastoid cells (GM12878)
     
-          cd /share/dennislab/sequencing/public/Rao_Huntley_2014
-
-
+            cd /share/dennislab/sequencing/public/Rao_Huntley_2014
+  
 
 ___
 
