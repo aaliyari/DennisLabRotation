@@ -10,10 +10,20 @@ End date: Friday March 17, 2017
 ### Experimental:
 
       Validate any found contacts using 3C + PCR
+      
+___
+
+## Table of contents
+1. [Week 1](#week1)
+2. [Week 2](#week2)
+3. [Week 3](#week3)
+4. [Week 4](#week4)
+5. [Week 5](#week5)
+6. [Appendix: How to run the scripts](#appendix)
 
 ___
 
-## Week 1:
+## <a name="week1"></a>_Week 1_
 
 - [x] Warm up!
 
@@ -47,7 +57,7 @@ chr   start   end   chr   start   end   O/E   bin_i   bin_j   no. of contacts
 
 ___
      
-## Week 2
+## <a name="week2"></a>_Week 2_
 
 - [x] Optimize the python script for finding enhancer-promoter contacts
 - Utilizing the sorted property of the input files (enhancer BED, promoted BED and Hi-C matrix), the function goes through the Hi-C file only once, reading it line by line. This is vital for the overall speed considering size of the Hi-C files (several Gigabytes).
@@ -84,7 +94,8 @@ Duplication -> chr16:33,293,711-33,465,325
 
 ___
 
-## Week 3
+## <a name="week3"></a>_Week 3_
+
 ### Primer Design
 # remember to pick the reverse strand
 case:  
@@ -306,4 +317,11 @@ TARGETS (start, len)*: 231,6
 
   421 CCCCGCGCAGAGCACTACTGTAACTTCCAAGGGAGCGCTGGGAGCAGCGGGATCGGGTTT
   ```
-                                                                
+                                                               
+                                                              
+  ## <a name="week4"></a>_Week 4_
+  
+  ## <a name="week5"></a>_Week 5_
+  
+  ## <a name="appendix"></a>_Appendix: How to run the scripts_
+  
