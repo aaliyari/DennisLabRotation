@@ -9,7 +9,7 @@ End date: Friday March 17, 2017
 
 ### Experimental:
 
-      Validate any found contacts using 3C-pcr
+      Validate any found contacts using 3C + PCR
 
 ___
 
@@ -76,6 +76,8 @@ Duplication -> chr16:33,293,711-33,465,325
 - Output: 
 **Interacting enhancer-promoter pairs!**
 
+- Result:
+**There are enhancers in the DUSP22b HSD region on chr16 that show faint contacts with a few promoters near GRIN2A gene on chr16, which is an autism-related gene! (They are ~10Mb apart, so no reason to get super excited (*sighs*))**
 ___
 
 ## Week 3
