@@ -8,20 +8,23 @@ ___
 ## Week 1:
 
 - [x] Warm up!
-```
+
 - Get a sample list of promoters from [FANTOM](http://pressto.binf.ku.dk/): all chr6 promoters - BED format
 - Some HSD enhancers on chr6 (DUSP22) from Paulina
 - Hi-C matrix from [Rao & Huntley et al. 2014](http://www.cell.com/abstract/S0092-8674(14)01497-4) (5kb resolution for now)  
-GEO accesion number: [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525)     
-```
+GEO accesion number: [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE63525)
   
 - [x] write a python script to normalize the Hi-C matrix
+
 - normalization method used: KRnorm (used in Rao & Huntley et al. 2014)
+```
+Each entry of M_ij of the raw Hi-C matrix should be divided by its corresponding values in the normalization vector file (*.KRnorm).
+```
+- For details, see this [readme](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE63525&format=file&file=GSE63525%5FGM12878%5Fcombined%5FREADME%2Ertf)
+```
+function name: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in blahblah.py
+```
 
-Each entry of M_ij of the raw Hi-C matrix should be divided by its corresponding values in the normalization vector file (*.KRnorm). For details, see this [readme](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE63525&format=file&file=GSE63525%5FGM12878%5Fcombined%5FREADME%2Ertf)
-
-- function name: normalize_HiC(HiC_raw_file, KRnorm_file, resolution)
-      
 - [x] find the number of contacts between promoters and enhancers using the normalized Hi-C matrix
 ```sh
 sort -k1,1n -k2,2n normalized_HiC.txt > sorted_normalized_HiC.txt
