@@ -51,10 +51,10 @@ sort -k1,1n -k2,2n normalized_HiC.txt > sorted_normalized_HiC.txt
 ```
 function: blahblah(..) in dennisLab.py
 output format: enhancer BED + promoter BED + O/E + HiC line
-chr   start       end         chr   start       end         O/E               bin_i       bin_j       no. of contacts
-chr6	159525909	159526201	chr6	159465863	159465874	3.29467895217     159465000.0 159525000.0	73.9561526412
+chr   start end   chr   start end   O/E   bin_i bin_j no. of contacts
+chr6	159525909   159526201	chr6	159465863	159465874	3.29467895217     159465000.0 159525000.0	73.9561526412
 ```
-# remember to omit -/+ in the code, it's redundant.
+## remember to omit -/+ in the code, it's redundant.
 
 - The 6th column in the output file is the observed/expected value for each pair of contacting loci in the Hi-C matrix, which is a measure of the contact's significance. Expected values are provided as a seperate file (*.KRexpected) and are available for intrachromosomal contacts only.
 
@@ -94,6 +94,8 @@ Duplication -> chr16:33,293,711-33,465,325
 - Result:  
 
       **There are enhancers in the DUSP22b HSD region on chr16 that show faint contacts with a few promoters near GRIN2A gene on chr16, which is an autism-related gene! (They are ~10Mb apart, so no reason to get super excited.)**
+      
+      *What's next? Design primers to validate this finding: Is this enhancer-promoter pair really in contact in vitro?*
 
 ___
 
