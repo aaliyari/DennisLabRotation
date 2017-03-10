@@ -188,7 +188,7 @@ ___
 
 - **Case Enhancer**  
 
-      HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16 
+            HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16 
       
 - Designed primers (output from Primer3):
 
@@ -214,112 +214,100 @@ ___
                                   <<<<<<<<<<<<<<<<<<<<<<<<<<<<          
         601 AAAGACATTTTGGATGGGGTCATTTCTGTGCATGTCCTGTGTACACAGGCCTGATTTTAA
  
+___
+ 
+- **Control Promoter #1**
+
+            A promoter that is not in contact with the case enhancer (found using Hi-C data and correlation data in FANTOM)  
+            Control Promoter #1 = [chr16:66600315-66600370]   
+      
+- Designed primers (output from Primer3):
+
+            OLIGO            start  len      tm     gc%   any    3' seq 
+            LEFT PRIMER         99   27   61.02   37.04  4.00  3.00 AGACCACTTAAAACTTGTGTGAATGAC
+            RIGHT PRIMER       374   29   60.39   31.03  6.00  2.00 ATAACTGCAGAAAATATGTGGAAGAATAC
+            SEQUENCE SIZE: 524
+            INCLUDED REGION SIZE: 524
+
+            PRODUCT SIZE: 276, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 0.00
+            TARGETS (start, len)*: 231,6
+
+    
+         61 CAATCCGAGTACCCTAGCAAGAGAGGAATCTGGTGGGCAGACCACTTAAAACTTGTGTGA
+                                                  >>>>>>>>>>>>>>>>>>>>>>
+        121 ATGACAGGAGTGGGGACCATGGTTAGGGCAGTGACACTTGTCTTTCTTTCCAGGTGTTTG
+            >>>>>                                                       
+        181 CACTTGTGACAGCAGTATGCTGTCTTGCCGACGGGGCCCTTATTTACCGGAAGCTTCTGT
+                                                              ******    
+        241 TCAATCCCAGCGGTCCTTACCAGAAAAAGCCTGTGCATGAAAAAAAAGAAGTTTTGTAAT
+        301 TTTATATTACTTTTTAGTTTGATACTAAGTATTAAACATATTTCTGTATTCTTCCACATA
+                                                         <<<<<<<<<<<<<<<
+        361 TTTTCTGCAGTTATTTTAACTCAGTATAGGAGCTAGAGGAAGAGATTTCCGAAGTCTGCA
+            <<<<<<<<<<<<<<                                              
+        421 CCCCGCGCAGAGCACTACTGTAACTTCCAAGGGAGCGCTGGGAGCAGCGGGATCGGGTTT
+ 
+___
+ 
+ - **Control Promoter #2**  
+
+            An enhancer-promoter pair that are not in contact (based on Hi-C data and FANTOM database)  
+            Control Promoter #2 = [chr6:13274087-13274115]  
+
+- Designed primers (output from Primer3):
+
+            OLIGO            start  len      tm     gc%   any    3' seq 
+            LEFT PRIMER         45   29   60.11   34.48  4.00  2.00 TCTCAGTAGAAGTTATTTTCAGGATTAGC
+            RIGHT PRIMER       290   28   62.86   39.29  8.00  2.00 AGTTTATAATGGCTCAGGTACCAGATTG
+            SEQUENCE SIZE: 366
+            INCLUDED REGION SIZE: 366
+
+            PRODUCT SIZE: 246, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 1.00
+            TARGETS (start, len)*: 168,6
+
+
+          1 AATGTCTTGCCTCCCGTCCCCACGCCAGCCGCCACTTCCTCAACTCTCAGTAGAAGTTAT
+                                                        >>>>>>>>>>>>>>>>
+         61 TTTCAGGATTAGCCTTCCTCAGTCGTGGGGGAACCCTACGCTTTGCCTAGGTCTCTAGGA
+            >>>>>>>>>>>>>                                               
+        121 ATGTGTGTTTACTTTTTTCTGCCCAAGGGGTACCCTTTAAAGTTTCCAAGCTTAATATTC
+                                                           ******       
+        181 TATATAATGAATTCAGAGCTTTTTCAAAGCATTTCCAAGGTCAGGGAAGCATTTGGCTTG
+        241 TAGGATGTCTTCCTTTCGGCCCCAATCTGGTACCTGAGCCATTATAAACTTCCCATTGTT
+                                  <<<<<<<<<<<<<<<<<<<<<<<<<<<<          
+        301 GGAGAGAAAGATAAACAGCCAGGTGAACCTGTACAACTTACTCACAGCCCGCTGCTGTAC
+       
  ___
- control (pair not in contact)
- enhancer: chr6	170589556	170589600
- OLIGO            start  len      tm     gc%   any    3' seq 
-LEFT PRIMER        100   29   61.24   41.38  4.00  2.00 TACCAAGTAGACGCACTCTTACCATATAC
-RIGHT PRIMER       338   28   59.87   35.71  4.00  1.00 GTTCTCTATCCATGTGAGCTATAATTTG
-SEQUENCE SIZE: 540
-INCLUDED REGION SIZE: 540
+ 
+ - **Control Enhancer #1**  
 
-PRODUCT SIZE: 239, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 1.00
-TARGETS (start, len)*: 264,6
-```sh
+            An enhancer-promoter pair that are not in contact (based on Hi-C data and FANTOM database)  
+            Control Enhancer #1 = [chr6:170589556-170589600]  
 
-    1 ATTCAGCTGTTCCTCAGGAAACGATTTACCTTCCCTCTGCCTTTTCTGTAAAATGCATGG
-                                                                  
+- Designed primers (output from Primer3):
 
-   61 ACTGAGGAATTACTAATGCATAACACTTTGTTTGCTGGATACCAAGTAGACGCACTCTTA
-                                             >>>>>>>>>>>>>>>>>>>>>
+            OLIGO            start  len      tm     gc%   any    3' seq 
+            LEFT PRIMER        100   29   61.24   41.38  4.00  2.00 TACCAAGTAGACGCACTCTTACCATATAC
+            RIGHT PRIMER       338   28   59.87   35.71  4.00  1.00 GTTCTCTATCCATGTGAGCTATAATTTG
+            SEQUENCE SIZE: 540
+            INCLUDED REGION SIZE: 540
 
-  121 CCATATACAGGGCTGTATCTAGGCAGCCAGTTATTAGAATAAAAACAGAATACTATGTTC
-      >>>>>>>>                                                    
+            PRODUCT SIZE: 239, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 1.00
+            TARGETS (start, len)*: 264,6
 
-  181 ATCCGCTCAGATAATCCCTGTGTTTGGCTTCATGTTATGGTTCGAAACTCCTAGTGACAT
-                                                                  
 
-  241 TGGTAAGAGTGAACACGAGAATGAAGCTTCTTTCATGATGAAATGTCCTGAGTGTGTGTC
-                             ******                               
-
-  301 TGTGTGTTCTCAAATTATAGCTCACATGGATAGAGAACGTTTTCTTGCTTCAGCCTCAAG
-                <<<<<<<<<<<<<<<<<<<<<<<<<<<<                      
-
-  361 TGGGGATTGGGTTGCAGTGGTGAACCAGGGCCAACACAGCCCGCCCTCTTTGAGGTTGCA
-                                                                  
-
-  421 GTCTCCTGGGACACACGCCCACTAAACAAACAGCTACACGAATTAATCATGCCACAGGGC
-                                                                  
-
-  481 AAACTGCAAGAGCACCATCACGTGCGGCAGGTAACCCAGGCGGGTCATTTTCGTGGCGGA
-  ```
-  
-  ___
-  
-  promoter: chr6	13274087	13274115
-  
-  OLIGO            start  len      tm     gc%   any    3' seq 
-LEFT PRIMER         45   29   60.11   34.48  4.00  2.00 TCTCAGTAGAAGTTATTTTCAGGATTAGC
-RIGHT PRIMER       290   28   62.86   39.29  8.00  2.00 AGTTTATAATGGCTCAGGTACCAGATTG
-SEQUENCE SIZE: 366
-INCLUDED REGION SIZE: 366
-
-PRODUCT SIZE: 246, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 1.00
-TARGETS (start, len)*: 168,6
-```
-
-    1 AATGTCTTGCCTCCCGTCCCCACGCCAGCCGCCACTTCCTCAACTCTCAGTAGAAGTTAT
-                                                  >>>>>>>>>>>>>>>>
-
-   61 TTTCAGGATTAGCCTTCCTCAGTCGTGGGGGAACCCTACGCTTTGCCTAGGTCTCTAGGA
-      >>>>>>>>>>>>>                                               
-
-  121 ATGTGTGTTTACTTTTTTCTGCCCAAGGGGTACCCTTTAAAGTTTCCAAGCTTAATATTC
-                                                     ******       
-
-  181 TATATAATGAATTCAGAGCTTTTTCAAAGCATTTCCAAGGTCAGGGAAGCATTTGGCTTG
-                                                                  
-
-  241 TAGGATGTCTTCCTTTCGGCCCCAATCTGGTACCTGAGCCATTATAAACTTCCCATTGTT
-                            <<<<<<<<<<<<<<<<<<<<<<<<<<<<          
-
-  301 GGAGAGAAAGATAAACAGCCAGGTGAACCTGTACAACTTACTCACAGCCCGCTGCTGTAC
-  ```
-  ___
-  promoter (control): chr16	66600315	66600370
-  
-OLIGO            start  len      tm     gc%   any    3' seq 
-LEFT PRIMER         99   27   61.02   37.04  4.00  3.00 AGACCACTTAAAACTTGTGTGAATGAC
-RIGHT PRIMER       374   29   60.39   31.03  6.00  2.00 ATAACTGCAGAAAATATGTGGAAGAATAC
-SEQUENCE SIZE: 524
-INCLUDED REGION SIZE: 524
-
-PRODUCT SIZE: 276, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 0.00
-TARGETS (start, len)*: 231,6
-```sh
-    1 GAGGAGAATAAGATGATCTCTGAAGTCTCTCCATGTTAGTATTAGATGAAGCACAGGGAG
-                                                                  
-
-   61 CAATCCGAGTACCCTAGCAAGAGAGGAATCTGGTGGGCAGACCACTTAAAACTTGTGTGA
-                                            >>>>>>>>>>>>>>>>>>>>>>
-
-  121 ATGACAGGAGTGGGGACCATGGTTAGGGCAGTGACACTTGTCTTTCTTTCCAGGTGTTTG
-      >>>>>                                                       
-
-  181 CACTTGTGACAGCAGTATGCTGTCTTGCCGACGGGGCCCTTATTTACCGGAAGCTTCTGT
-                                                        ******    
-
-  241 TCAATCCCAGCGGTCCTTACCAGAAAAAGCCTGTGCATGAAAAAAAAGAAGTTTTGTAAT
-                                                                  
-
-  301 TTTATATTACTTTTTAGTTTGATACTAAGTATTAAACATATTTCTGTATTCTTCCACATA
-                                                   <<<<<<<<<<<<<<<
-
-  361 TTTTCTGCAGTTATTTTAACTCAGTATAGGAGCTAGAGGAAGAGATTTCCGAAGTCTGCA
-      <<<<<<<<<<<<<<                                              
-
-  421 CCCCGCGCAGAGCACTACTGTAACTTCCAAGGGAGCGCTGGGAGCAGCGGGATCGGGTTT
-  ```
+          1 ATTCAGCTGTTCCTCAGGAAACGATTTACCTTCCCTCTGCCTTTTCTGTAAAATGCATGG
+         61 ACTGAGGAATTACTAATGCATAACACTTTGTTTGCTGGATACCAAGTAGACGCACTCTTA
+                                                   >>>>>>>>>>>>>>>>>>>>>
+        121 CCATATACAGGGCTGTATCTAGGCAGCCAGTTATTAGAATAAAAACAGAATACTATGTTC
+            >>>>>>>>                                                    
+        181 ATCCGCTCAGATAATCCCTGTGTTTGGCTTCATGTTATGGTTCGAAACTCCTAGTGACAT
+        241 TGGTAAGAGTGAACACGAGAATGAAGCTTCTTTCATGATGAAATGTCCTGAGTGTGTGTC
+                                   ******                               
+        301 TGTGTGTTCTCAAATTATAGCTCACATGGATAGAGAACGTTTTCTTGCTTCAGCCTCAAG
+                      <<<<<<<<<<<<<<<<<<<<<<<<<<<<                      
+        361 TGGGGATTGGGTTGCAGTGGTGAACCAGGGCCAACACAGCCCGCCCTCTTTGAGGTTGCA
+        421 GTCTCCTGGGACACACGCCCACTAAACAAACAGCTACACGAATTAATCATGCCACAGGGC
+        
 ____                                                      
                                                               
 ## <a name="week4"></a>_Week 4_
