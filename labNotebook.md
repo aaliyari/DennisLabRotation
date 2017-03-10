@@ -334,25 +334,26 @@ ___
 
 Script Name: detectContacts_intra.py
 
-            Usage: ./detectContacts_intra.py -raw <raw Hi-C file> -norm <KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -exp <KRexpected file> -res <resolution>
+      Usage: ./detectContacts_intra.py -raw <raw Hi-C file> -norm <KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -exp <KRexpected file> -res <resolution>
       
       
 Example:
 
 - intrachromosomal:
 
-            ./detectContacts_intra.py -raw chr6_5kb.RAWobserved -norm chr6_5kb.KRnorm -enh enhancers.bed -prom promoters.bed -exp chr6_5kb.KRexpected -res 5000
+      ./detectContacts_intra.py -raw chr6_5kb.RAWobserved -norm chr6_5kb.KRnorm -enh enhancers.bed -prom promoters.bed -exp chr6_5kb.KRexpected -res 5000
+      
 ___
 
 Script Name: detectContacts_inter.py
 
-            Usage: ./detectContacts_inter.py -raw <raw Hi-C file> -norm1 <1st chr KRnorm file> -norm2 <2nd chr KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -res <resolution>
+      Usage: ./detectContacts_inter.py -raw <raw Hi-C file> -norm1 <1st chr KRnorm file> -norm2 <2nd chr KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -res <resolution>
       
 Example:
 
 - interchromosomal:
 
-            ./detectContacts_inter.py -raw chr1_16_1kb.RAWobserved -norm1 chr1_1kb.KRnorm -norm2 chr16_1kb.KRnorm -enh enhancers.bed -prom promoters.bed -res 1000
+      ./detectContacts_inter.py -raw chr1_16_1kb.RAWobserved -norm1 chr1_1kb.KRnorm -norm2 chr16_1kb.KRnorm -enh enhancers.bed -prom promoters.bed -res 1000
       
 ___
 
