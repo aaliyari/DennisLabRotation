@@ -163,18 +163,17 @@ recommend checking the uniqueness of each primer."
 
             Promoter = [chr16:10,123,539-10,127,438] located near GRIN2A on chr16
       
-Designed primers (output from Primer3):
+- Designed primers (output from Primer3):
 
-```
-OLIGO            start  len      tm     gc%   any    3' seq 
-LEFT PRIMER        206   28   66.14   46.43  5.00  2.00 TTAAGGCTTCAGAGATACAGCAGTGAGC
-RIGHT PRIMER       420   28   65.82   46.43  6.00  2.00 AGATTTCTCCCTGGCCTCATGATAGTAG
-SEQUENCE SIZE: 695
-INCLUDED REGION SIZE: 695
+            OLIGO            start  len      tm     gc%   any    3' seq 
+            LEFT PRIMER        206   28   66.14   46.43  5.00  2.00 TTAAGGCTTCAGAGATACAGCAGTGAGC
+            RIGHT PRIMER       420   28   65.82   46.43  6.00  2.00 AGATTTCTCCCTGGCCTCATGATAGTAG
+            SEQUENCE SIZE: 695
+            INCLUDED REGION SIZE: 695
 
-PRODUCT SIZE: 215, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 3.00
-TARGETS (start, len)*: 318,6
-```
+            PRODUCT SIZE: 215, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 3.00
+            TARGETS (start, len)*: 318,6
+
 ```
     1 CTCTCTTAAGCTCAAGACTTTTTATTTTGTGTTTTTTACATTGATGAGTTATAAAGGGGT
                                                                   
@@ -210,9 +209,12 @@ TARGETS (start, len)*: 318,6
 ```
 ___
 
-enhancer = [chr6:348,176-365,475]  
-primers:  
+- **Case Enhancer**  
 
+      HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16 
+      
+- Designed primers (output from Primer3):
+```
 OLIGO            start  len      tm     gc%   any    3' seq 
 LEFT PRIMER        297   28   69.95   50.00  5.00  0.00 ATTACCATCTGACTGAAGGGTGCGAGTG
 RIGHT PRIMER       590   28   62.80   46.43  5.00  3.00 CTACCTCTAAACCAATAGCTGCCACTAC
@@ -221,7 +223,8 @@ INCLUDED REGION SIZE: 1082
 
 PRODUCT SIZE: 294, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 3.00
 TARGETS (start, len)*: 470,6
-```sh
+```
+```
     1 CCATCCTGAGTTATTAATAATTTTATTAAGAATATGCTTTCAACACGCTTGTATTTATAT
                                                                   
 
