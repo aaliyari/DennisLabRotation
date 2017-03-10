@@ -101,6 +101,8 @@ ___
 
 ## <a name="week3"></a>_Week 3_
 
+**Hypothesis:** If the enhancer-promoter pair found in the Hi-C data are really in contact in 3D, we should be able to detect them using PCR amplification in Aarthi's Libraries. The primers are desinged based on the 3C protocol: [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
+
 ### Primer Design
 case:  
 promoter = [chr16:10,123,539-10,127,438]
