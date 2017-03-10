@@ -95,7 +95,7 @@ Duplication -> chr16:33,293,711-33,465,325
 
       **There are enhancers in the DUSP22b HSD region on chr16 that show faint contacts with a few promoters near GRIN2A gene on chr16, which is an autism-related gene! (They are ~10Mb apart, so no reason to get super excited.)**
 ```      
-*What's next? Design primers to validate this finding: Is this enhancer-promoter pair really in contact in vitro?*
+What's next? Design primers to validate this finding: Is this enhancer-promoter pair really in contact in vitro?
 ```
 ___
 
@@ -104,6 +104,7 @@ ___
 **Hypothesis:** If the enhancer-promoter pair found in the Hi-C data are really in contact in 3D, we should be able to detect them using PCR amplification in Aarthi's Libraries. The primers are desinged based on the 3C protocol: [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
 
 ### Experimental Design:
+
 - **Case**  
 
       HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16  
@@ -119,6 +120,44 @@ ___
       An enhancer-promoter pair that are not in contact (based on Hi-C data and FANTOM database)  
       Control Enhancer #1 = [chr6:170589556-170589600]  
       Control Promoter #2 = [chr6:13274087-13274115]  
+      
+      
+- **Aarthi's Hi-C Library**
+
+       Ask Aarthi for a description!
+   
+### Steps:
+
+1) Desgin primers for all enhancers/promoters based on protocol described in [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
+```
+"To increase specificity of the primers we recommend designing
+long primers with high melting temperature (on average the Tm is
+90C); the length of 3C primers is 28–30 bp with a GC content of
+50%, preferably carrying a single G or C nucleotide on the 30
+end. We have found that the use of rather long primers is especially
+important for complex genomes, where short 20 bp primers do not
+provide necessary specificity and efficiency. Primers are designed
+80–150 bp away from the restriction cut site so that the predicted
+amplicon will be between 160 and 300 bp in size. We
+recommend checking the uniqueness of each primer.
+```              
+
+2) PCR bidirectional primers for each enhancer and promoter using gDNA:
+
+            Expected result: should amplify!
+            Observed result: they did!
+           
+3) Do one primer-free PCR for control
+            
+            Expected result: nothing should amplify!
+            Observed result: nothing amplified!
+                 
+3) PCR unidirectional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
+            
+            Expected result: should see some amplification
+            Observed result: TBD
+ 
+ 
 
 ### Primer Design
 case:  
