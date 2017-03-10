@@ -341,7 +341,7 @@ Example:
 
 - intrachromosomal:
 
-      ./detectContacts_intra.py -raw chr6_5kb.RAWobserved -norm chr6_5kb.KRnorm -enh enhancers.bed -prom promoters.bed -exp chr6_5kb.KRexpected -res 5000
+            ./detectContacts_intra.py -raw chr6_5kb.RAWobserved -norm chr6_5kb.KRnorm -enh enhancers.bed -prom promoters.bed -exp chr6_5kb.KRexpected -res 5000
       
 ___
 
@@ -353,7 +353,7 @@ Example:
 
 - interchromosomal:
 
-      ./detectContacts_inter.py -raw chr1_16_1kb.RAWobserved -norm1 chr1_1kb.KRnorm -norm2 chr16_1kb.KRnorm -enh enhancers.bed -prom promoters.bed -res 1000
+            ./detectContacts_inter.py -raw chr1_16_1kb.RAWobserved -norm1 chr1_1kb.KRnorm -norm2 chr16_1kb.KRnorm -enh enhancers.bed -prom promoters.bed -res 1000
       
 ___
 
