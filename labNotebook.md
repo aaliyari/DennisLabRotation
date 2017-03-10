@@ -105,15 +105,20 @@ ___
 
 ### Experimental Design:
 - **Case**  
-HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16  
-Promoter = [chr16:10,123,539-10,127,438] located near GRIN2A on chr16
+
+      HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16  
+      Promoter = [chr16:10,123,539-10,127,438] located near GRIN2A on chr16
+      
 - **Control #1**  
-A promoter that is not in contact with the case enhancer (found using Hi-C data and correlation data in FANTOM)  
-Control Promoter #1 = [chr16:66600315-66600370]  
+
+      A promoter that is not in contact with the case enhancer (found using Hi-C data and correlation data in FANTOM)  
+      Control Promoter #1 = [chr16:66600315-66600370]  
+      
 - **Control #2**  
-An enhancer-promoter pair that are not in contact (based on Hi-C data and FANTOM database)  
-Control Enhancer #1 = [chr6:170589556-170589600]  
-Control Promoter #2 = [chr6:13274087-13274115]  
+
+      An enhancer-promoter pair that are not in contact (based on Hi-C data and FANTOM database)  
+      Control Enhancer #1 = [chr6:170589556-170589600]  
+      Control Promoter #2 = [chr6:13274087-13274115]  
 
 ### Primer Design
 case:  
