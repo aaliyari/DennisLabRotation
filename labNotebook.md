@@ -94,14 +94,26 @@ Duplication -> chr16:33,293,711-33,465,325
 - Result:  
 
       **There are enhancers in the DUSP22b HSD region on chr16 that show faint contacts with a few promoters near GRIN2A gene on chr16, which is an autism-related gene! (They are ~10Mb apart, so no reason to get super excited.)**
-      
-      *What's next? Design primers to validate this finding: Is this enhancer-promoter pair really in contact in vitro?*
-
+```      
+*What's next? Design primers to validate this finding: Is this enhancer-promoter pair really in contact in vitro?*
+```
 ___
 
 ## <a name="week3"></a>_Week 3_
 
 **Hypothesis:** If the enhancer-promoter pair found in the Hi-C data are really in contact in 3D, we should be able to detect them using PCR amplification in Aarthi's Libraries. The primers are desinged based on the 3C protocol: [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
+
+### Experimental Design:
+- **Case**  
+HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16  
+Promoter = [chr16:10,123,539-10,127,438] located near GRIN2A on chr16
+- **Control #1**  
+A promoter that is not in contact with the case enhancer (found using Hi-C data and correlation data in FANTOM)  
+Control Promoter #1 = [chr16:66600315-66600370]  
+- **Control #2**  
+An enhancer-promoter pair that are not in contact (based on Hi-C data and FANTOM database)  
+Control Enhancer #1 = [chr6:170589556-170589600]  
+Control Promoter #2 = [chr6:13274087-13274115]  
 
 ### Primer Design
 case:  
