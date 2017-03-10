@@ -128,7 +128,7 @@ ___
    
 ### Steps:
 
-1) Desgin primers for all enhancers/promoters based on protocol described in [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
+1) Desgin primers using [Primer3](http://bioinfo.ut.ee/primer3-0.4.0/primer3/) for all enhancers/promoters based on protocol described in [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
 ```
 "To increase specificity of the primers we recommend designing
 long primers with high melting temperature (on average the Tm is
@@ -139,7 +139,7 @@ important for complex genomes, where short 20 bp primers do not
 provide necessary specificity and efficiency. Primers are designed
 80–150 bp away from the restriction cut site so that the predicted
 amplicon will be between 160 and 300 bp in size. We
-recommend checking the uniqueness of each primer.
+recommend checking the uniqueness of each primer."
 ```              
 
 2) PCR bidirectional primers for each enhancer and promoter using gDNA:
@@ -152,18 +152,20 @@ recommend checking the uniqueness of each primer.
             Expected result: nothing should amplify!
             Observed result: nothing amplified!
                  
-3) PCR unidirectional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
+4) PCR unidirectional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
             
             Expected result: should see some amplification
             Observed result: TBD
- 
- 
+
 
 ### Primer Design
-case:  
-promoter = [chr16:10,123,539-10,127,438]
-primers:
 
+- **Case Promoter**  
+
+      Promoter = [chr16:10,123,539-10,127,438] located near GRIN2A on chr16promoter = [chr16:10,123,539-10,127,438]
+      
+Designed primers (output from Primer3):
+```
 OLIGO            start  len      tm     gc%   any    3' seq 
 LEFT PRIMER        206   28   66.14   46.43  5.00  2.00 TTAAGGCTTCAGAGATACAGCAGTGAGC
 RIGHT PRIMER       420   28   65.82   46.43  6.00  2.00 AGATTTCTCCCTGGCCTCATGATAGTAG
@@ -172,6 +174,7 @@ INCLUDED REGION SIZE: 695
 
 PRODUCT SIZE: 215, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 3.00
 TARGETS (start, len)*: 318,6
+```
 ```sh
     1 CTCTCTTAAGCTCAAGACTTTTTATTTTGTGTTTTTTACATTGATGAGTTATAAAGGGGT
                                                                   
