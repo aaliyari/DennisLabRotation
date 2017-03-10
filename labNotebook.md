@@ -40,7 +40,7 @@ Each entry M_ij of the raw Hi-C matrix should be divided by its corresponding va
 ```
 - For details, please see this [readme](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE63525&format=file&file=GSE63525%5FGM12878%5Fcombined%5FREADME%2Ertf), available in the above mentioned GEO link.
 ```
-function: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in blahblah.py
+function: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in dennisLab.py
 ```
 
 - [x] Find the number of contacts between each pair of promoters and enhancers using the normalized Hi-C matrix
@@ -49,10 +49,13 @@ function: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in blahblah.py
 sort -k1,1n -k2,2n normalized_HiC.txt > sorted_normalized_HiC.txt
 ```
 ```
-function: blahblah(..) in blahblah.py
+function: blahblah(..) in dennisLab.py
 output format: enhancer BED + promoter BED + O/E + HiC line
-chr   start   end   chr   start   end   O/E   bin_i   bin_j   no. of contacts
+chr   start       end         chr   start       end         O/E               bin_i       bin_j       no. of contacts
+chr6	159525909	159526201	chr6	159465863	159465874	3.29467895217     159465000.0 159525000.0	73.9561526412
 ```
+# remember to omit -/+ in the code, it's redundant.
+
 - The 6th column in the output file is the observed/expected value for each pair of contacting loci in the Hi-C matrix, which is a measure of the contact's significance. Expected values are provided as a seperate file (*.KRexpected) and are available for intrachromosomal contacts only.
 
 ___
