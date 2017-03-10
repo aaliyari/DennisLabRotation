@@ -101,7 +101,7 @@ ___
 
 ## <a name="week3"></a>_Week 3_
 
-**Hypothesis:** If the enhancer-promoter pair found in the Hi-C data are really in contact in 3D, we should be able to detect them using PCR amplification in Aarthi's Libraries. The primers are desinged based on the 3C protocol: [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
+**Hypothesis:** If the enhancer-promoter pair found in the Hi-C data are really in contact in 3D, we should be able to detect them using PCR amplification in Aarthi's Hi-C Libraries. The primers are desinged based on the 3C protocol: [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
 
 ### Experimental Design:
 
@@ -128,7 +128,7 @@ ___
    
 ### Steps:
 
-- [x] 1) Desgin primers using [Primer3](http://bioinfo.ut.ee/primer3-0.4.0/primer3/) for all enhancers/promoters based on protocol described in [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
+- [x] 1) Desgin primers using [Primer3](http://bioinfo.ut.ee/primer3-0.4.0/primer3/) for all enhancers/promoters based on the protocol described in [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
 
 > "To increase specificity of the primers we recommend designing
 long primers with high melting temperature (on average the Tm is
@@ -141,7 +141,7 @@ provide necessary specificity and efficiency. Primers are designed
 amplicon will be between 160 and 300 bp in size. We
 recommend checking the uniqueness of each primer."              
 
-- [x] 2) PCR bidirectional primers for each enhancer and promoter using gDNA:
+- [x] 2) PCR bi-directional primers for each enhancer and promoter using gDNA:
 
             Expected result: should amplify!
             Observed result: they did!
@@ -151,7 +151,7 @@ recommend checking the uniqueness of each primer."
             Expected result: nothing should amplify!
             Observed result: nothing amplified!
                  
-- [x] 4) PCR unidirectional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
+- [x] 4) PCR uni-directional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
             
             Expected result: should see some amplification
             Observed result: TBD
@@ -168,9 +168,7 @@ recommend checking the uniqueness of each primer."
             OLIGO            start  len      tm     gc%   any    3' seq 
             LEFT PRIMER        206   28   66.14   46.43  5.00  2.00 TTAAGGCTTCAGAGATACAGCAGTGAGC
             RIGHT PRIMER       420   28   65.82   46.43  6.00  2.00 AGATTTCTCCCTGGCCTCATGATAGTAG
-            SEQUENCE SIZE: 695
-            INCLUDED REGION SIZE: 695
-
+          
             PRODUCT SIZE: 215, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 3.00
             TARGETS (start, len)*: 318,6
             
@@ -195,9 +193,7 @@ ___
             OLIGO            start  len      tm     gc%   any    3' seq 
             LEFT PRIMER        297   28   69.95   50.00  5.00  0.00 ATTACCATCTGACTGAAGGGTGCGAGTG
             RIGHT PRIMER       590   28   62.80   46.43  5.00  3.00 CTACCTCTAAACCAATAGCTGCCACTAC
-            SEQUENCE SIZE: 1082
-            INCLUDED REGION SIZE: 1082
-
+            
             PRODUCT SIZE: 294, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 3.00
             TARGETS (start, len)*: 470,6
 
@@ -226,9 +222,7 @@ ___
             OLIGO            start  len      tm     gc%   any    3' seq 
             LEFT PRIMER         99   27   61.02   37.04  4.00  3.00 AGACCACTTAAAACTTGTGTGAATGAC
             RIGHT PRIMER       374   29   60.39   31.03  6.00  2.00 ATAACTGCAGAAAATATGTGGAAGAATAC
-            SEQUENCE SIZE: 524
-            INCLUDED REGION SIZE: 524
-
+           
             PRODUCT SIZE: 276, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 0.00
             TARGETS (start, len)*: 231,6
 
@@ -258,9 +252,7 @@ ___
             OLIGO            start  len      tm     gc%   any    3' seq 
             LEFT PRIMER         45   29   60.11   34.48  4.00  2.00 TCTCAGTAGAAGTTATTTTCAGGATTAGC
             RIGHT PRIMER       290   28   62.86   39.29  8.00  2.00 AGTTTATAATGGCTCAGGTACCAGATTG
-            SEQUENCE SIZE: 366
-            INCLUDED REGION SIZE: 366
-
+         
             PRODUCT SIZE: 246, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 1.00
             TARGETS (start, len)*: 168,6
 
@@ -288,9 +280,7 @@ ___
             OLIGO            start  len      tm     gc%   any    3' seq 
             LEFT PRIMER        100   29   61.24   41.38  4.00  2.00 TACCAAGTAGACGCACTCTTACCATATAC
             RIGHT PRIMER       338   28   59.87   35.71  4.00  1.00 GTTCTCTATCCATGTGAGCTATAATTTG
-            SEQUENCE SIZE: 540
-            INCLUDED REGION SIZE: 540
-
+        
             PRODUCT SIZE: 239, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 1.00
             TARGETS (start, len)*: 264,6
 
@@ -314,26 +304,31 @@ ____
 
 Do the experiments..
 
+Add some results here..
+
 ___
 
 ## <a name="week5"></a>_Week 5_  
 
-- [ ] Clean up the script: user input from terminal etc.
-- [ ] Write a brief manual about the scirpts and add comments
-- [ ] Write rotation report
-- [ ] Practice for chalk talk
+- [ ] Clean up the script: automate everything, user input from terminal etc.
+- [ ] Write a brief manual for the scirpt and add comments for functions
+- [ ] Write the rotation report
+- [ ] Practice for the chalk talk on Friday
 
 ### Bonus computational task
            
 1) Find all (genome-wide, intra and inter-chromosomal) enhancer-promoter contacts caused by HSDs
+- HSD enhancers list from Paulina
+- Hi-C data from Rao & Huntley et al. 2014, downloaded to:
+
+            cd /share/dennislab/sequencing/public/Rao_Huntley_2014
 
 2) Differential gene expression level analysis between human, chimp and rhesus  
 - data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
 
-
-3) Look for differentially expressed genes! Are these differences statistically significant?
+3) Look for differentially expressed genes between species! Are these differences statistically significant?
 
 ___
 
 ## <a name="appendix"></a>_Appendix: How to run the scripts_
-  
+
