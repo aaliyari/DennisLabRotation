@@ -357,4 +357,4 @@ Example:
       
 ___
 
-Bash scripts for finding the genome-wide enhancer-promoter contacts due to HSDs and performing differential gene expression anaylysis can be found in genome-wide-Human_NHP.sh
+Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs and performing differential gene expression anaylysis can be found in genome_wide_Human_NHP.sh
