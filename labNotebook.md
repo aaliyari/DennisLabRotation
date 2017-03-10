@@ -141,17 +141,17 @@ provide necessary specificity and efficiency. Primers are designed
 amplicon will be between 160 and 300 bp in size. We
 recommend checking the uniqueness of each primer."              
 
-- [ ] 2) PCR bidirectional primers for each enhancer and promoter using gDNA:
+- [x] 2) PCR bidirectional primers for each enhancer and promoter using gDNA:
 
             Expected result: should amplify!
             Observed result: they did!
            
-- [ ] 3) Do one primer-free PCR for control
+- [x] 3) Do one primer-free PCR for control
             
             Expected result: nothing should amplify!
             Observed result: nothing amplified!
                  
-- [ ] 4) PCR unidirectional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
+- [x] 4) PCR unidirectional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
             
             Expected result: should see some amplification
             Observed result: TBD
@@ -315,7 +315,20 @@ ____
 ___
 
 ## <a name="week5"></a>_Week 5_  
-  
+
+- [ ] Clean up the script: user input from terminal etc.
+- [ ] Write a brief manual about the scirpts and add comments
+- [ ] Write rotation report
+- [ ] Practice for chalk talk
+
+### Bonus computational task
+           
+1) Find all (genome-wide, intra and inter-chromosomal) enhancer-promoter contacts caused by HSDs
+
+2) Differential gene expression level analysis between human, chimp and rhesus using data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
+
+3) Look for differentially expressed genes! Are these differences statistically significant?
+
 ___
 
 ## <a name="appendix"></a>_Appendix: How to run the scripts_
