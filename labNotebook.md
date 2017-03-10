@@ -276,9 +276,9 @@ ___
                                   <<<<<<<<<<<<<<<<<<<<<<<<<<<<          
         301 GGAGAGAAAGATAAACAGCCAGGTGAACCTGTACAACTTACTCACAGCCCGCTGCTGTAC
        
- ___
+___
  
- - **Control Enhancer #1**  
+- **Control Enhancer #1**  
 
             An enhancer-promoter pair that are not in contact (based on Hi-C data and FANTOM database)  
             Control Enhancer #1 = [chr6:170589556-170589600]  
