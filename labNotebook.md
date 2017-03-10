@@ -97,7 +97,6 @@ ___
 ## <a name="week3"></a>_Week 3_
 
 ### Primer Design
-# remember to pick the reverse strand
 case:  
 promoter = [chr16:10,123,539-10,127,438]
 primers:
@@ -317,17 +316,16 @@ TARGETS (start, len)*: 231,6
 
   421 CCCCGCGCAGAGCACTACTGTAACTTCCAAGGGAGCGCTGGGAGCAGCGGGATCGGGTTT
   ```
-  ____                                                      
+____                                                      
                                                               
-  ## <a name="week4"></a>_Week 4_  
-  dsadsa
+## <a name="week4"></a>_Week 4_  dsadsa
   
+___
+
+## <a name="week5"></a>_Week 5_  
   
-  ## <a name="week5"></a>_Week 5_  
-  dasas
+___
+
+## <a name="appendix"></a>_Appendix: How to run the scripts_
   
-  
-  ## <a name="appendix"></a>_Appendix: How to run the scripts_
-  
-  dassad
   
