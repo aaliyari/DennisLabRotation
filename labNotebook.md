@@ -326,7 +326,7 @@ ___
 1) Find all (genome-wide, intra and inter-chromosomal) enhancer-promoter contacts caused by HSDs
 
 2) Differential gene expression level analysis between human, chimp and rhesus  
-      data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
+            data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
 
 
 3) Look for differentially expressed genes! Are these differences statistically significant?
