@@ -44,10 +44,6 @@ function: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in dennisLab.py
 ```
 
 - [x] Find the number of contacts between each pair of promoters and enhancers using the normalized Hi-C matrix
-- **All files should be sorted, for instance:**
-```sh
-sort -k1,1n -k2,2n normalized_HiC.txt > sorted_normalized_HiC.txt
-```
 ```
 function: blahblah(..) in dennisLab.py
 output format: enhancer BED + promoter BED + O/E + HiC line
@@ -323,12 +319,41 @@ ___
 
             cd /share/dennislab/sequencing/public/Rao_Huntley_2014
 
-2) Differential gene expression level analysis between human, chimp and rhesus  
+2) Find the closest genes to affected promoters using BEDtools
+
+        bedtools closest -a promoters -b genes ...
+
+3) Differential gene expression level analysis between human, chimp and rhesus  
 - data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
 
-3) Look for differentially expressed genes between species! Are these differences statistically significant?
+4) Look for differentially expressed genes between species! Are these differences statistically significant?
 
 ___
 
 ## <a name="appendix"></a>_Appendix: How to run the scripts_
 
+Script Name: detectContacts_intra.py
+
+      Usage: ./detectContacts_intra.py -raw <raw Hi-C file> -norm <KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -exp <KRexpected file> -res <resolution>
+      
+      
+Example:
+
+- intrachromosomal:
+
+      ./detectContacts_intra.py -raw chr6_5kb.RAWobserved -norm chr6_5kb.KRnorm -enh enhancers.bed -prom promoters.bed -exp chr6_5kb.KRexpected -res 5000
+___
+
+Script Name: detectContacts_inter.py
+
+      Usage: ./detectContacts_inter.py -raw <raw Hi-C file> -norm1 <1st chr KRnorm file> -norm2 <2nd chr KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -res <resolution>
+      
+Example:
+
+- interchromosomal:
+
+      ./detectContacts_inter.py -raw chr1_16_1kb.RAWobserved -norm1 chr1_1kb.KRnorm -norm2 chr16_1kb.KRnorm -enh enhancers.bed -prom promoters.bed -res 1000
+      
+___
+
+Bash scripts for finding the genome-wide enhancer-promoter contacts due to HSDs and performing differential gene expression anaylysis can be found in genome-wide-Human_NHP.sh
