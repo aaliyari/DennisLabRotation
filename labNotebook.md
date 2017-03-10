@@ -161,7 +161,7 @@ recommend checking the uniqueness of each primer."
 
 - **Case Promoter**  
 
-            Promoter = [chr16:10,123,539-10,127,438] located near GRIN2A on chr16promoter = [chr16:10,123,539-10,127,438]
+            Promoter = [chr16:10,123,539-10,127,438] located near GRIN2A on chr16
       
 Designed primers (output from Primer3):
 
@@ -175,8 +175,7 @@ INCLUDED REGION SIZE: 695
 PRODUCT SIZE: 215, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 3.00
 TARGETS (start, len)*: 318,6
 ```
-
-```sh
+```
     1 CTCTCTTAAGCTCAAGACTTTTTATTTTGTGTTTTTTACATTGATGAGTTATAAAGGGGT
                                                                   
 
