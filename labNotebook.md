@@ -129,8 +129,8 @@ ___
 ### Steps:
 
 - [x] 1) Desgin primers using [Primer3](http://bioinfo.ut.ee/primer3-0.4.0/primer3/) for all enhancers/promoters based on protocol described in [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
-```
-"To increase specificity of the primers we recommend designing
+
+> "To increase specificity of the primers we recommend designing
 long primers with high melting temperature (on average the Tm is
 90C); the length of 3C primers is 28–30 bp with a GC content of
 50%, preferably carrying a single G or C nucleotide on the 30
@@ -139,8 +139,7 @@ important for complex genomes, where short 20 bp primers do not
 provide necessary specificity and efficiency. Primers are designed
 80–150 bp away from the restriction cut site so that the predicted
 amplicon will be between 160 and 300 bp in size. We
-recommend checking the uniqueness of each primer."
-```              
+recommend checking the uniqueness of each primer."              
 
 - [ ] 2) PCR bidirectional primers for each enhancer and promoter using gDNA:
 
