@@ -311,7 +311,9 @@ ___
 ____                                                      
                                                               
 ## <a name="week4"></a>_Week 4_
-  
+
+Do the experiments..
+
 ___
 
 ## <a name="week5"></a>_Week 5_  
@@ -334,5 +336,4 @@ ___
 ___
 
 ## <a name="appendix"></a>_Appendix: How to run the scripts_
-  
   
