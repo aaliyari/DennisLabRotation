@@ -174,9 +174,7 @@ recommend checking the uniqueness of each primer."
             PRODUCT SIZE: 215, PAIR ANY COMPL: 5.00, PAIR 3' COMPL: 3.00
             TARGETS (start, len)*: 318,6
             
-          1 CTCTCTTAAGCTCAAGACTTTTTATTTTGTGTTTTTTACATTGATGAGTTATAAAGGGGT
-         61 CTCTCTCATCTTTCCCTTCTTTTTACCTTCTTCTTTGCTGAATCTCTGCTCTCTGGCCAG
-        121 GAGTCATTACATAGAAACTTAAGTGCAGGGTGATCATCTATTAACTCAGCAAATAGTTAT
+       
         181 CGACAGCTACAATCTCAGATACTATTTAAGGCTTCAGAGATACAGCAGTGAGCAAAATTG
                                      >>>>>>>>>>>>>>>>>>>>>>>>>>>>       
         241 CTGTCAAAGTGCCCACATTCTAGTGGAAAAAGCAATAAATAGATGTATTATTTGTTGCCC
@@ -185,9 +183,6 @@ recommend checking the uniqueness of each primer."
         361 CTGCCATACTGGCTGCTGACTTGTTAAAAATACTACTATCATGAGGCCAGGGAGAAATCT
                                             <<<<<<<<<<<<<<<<<<<<<<<<<<<<
         421 GAACTCGGGAAAGTGGTGTGGGGGCCAGAATTTGAGAAGAGAAGAAGCCTACGCTGGAAT
-        481 CGCACTTAGTTCACGTCACTTCCCAGATCTGGCTTCCAATGGCCTCTTCTCACCCTCTAA                                                           
-        541 ATAAAATACGTAAATCCTCAATGTGGCCTTTACAATCTGCCTCTTTTAATCCTTCTCTGC
-        601 AGCCACAATGACTTCTATGATGGTCTTCCAATACCCTGAGCCTGTTCCCACCTCAGGGTC
         
 ___
 
@@ -196,70 +191,28 @@ ___
       HSD Enhancer = [chr6:348,176-365,475] duplicated in DUSP22b on chr16 
       
 - Designed primers (output from Primer3):
-```
-OLIGO            start  len      tm     gc%   any    3' seq 
-LEFT PRIMER        297   28   69.95   50.00  5.00  0.00 ATTACCATCTGACTGAAGGGTGCGAGTG
-RIGHT PRIMER       590   28   62.80   46.43  5.00  3.00 CTACCTCTAAACCAATAGCTGCCACTAC
-SEQUENCE SIZE: 1082
-INCLUDED REGION SIZE: 1082
 
-PRODUCT SIZE: 294, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 3.00
-TARGETS (start, len)*: 470,6
-```
-```
-    1 CCATCCTGAGTTATTAATAATTTTATTAAGAATATGCTTTCAACACGCTTGTATTTATAT
-                                                                  
+            OLIGO            start  len      tm     gc%   any    3' seq 
+            LEFT PRIMER        297   28   69.95   50.00  5.00  0.00 ATTACCATCTGACTGAAGGGTGCGAGTG
+            RIGHT PRIMER       590   28   62.80   46.43  5.00  3.00 CTACCTCTAAACCAATAGCTGCCACTAC
+            SEQUENCE SIZE: 1082
+            INCLUDED REGION SIZE: 1082
 
-   61 ATGTACTTAACAAGAAATCACCAAGACTGCAGCGGGCAGTTCCTCTTCCCTTTCCTTTTC
-                                                                  
+            PRODUCT SIZE: 294, PAIR ANY COMPL: 4.00, PAIR 3' COMPL: 3.00
+            TARGETS (start, len)*: 470,6
 
-  121 ATTGCCCAGAGAAAGGGAGAAAAAAAAACAACACTGCATTTGACTTGTCACTTGGAGGCT
-                                                                  
 
-  181 TAATTCCCTTCTTACATGCAGCAGTGGGGTCTCCTTCCGCCCTCAGGCACAGCTTGCTTT
-                                                                  
-
-  241 GAGACTTGCAGTATCACAATTAGTGTTCTCTTGCAGCTTGGACTTAACCAGCTTAAATTA
-                                                              >>>>
-
-  301 CCATCTGACTGAAGGGTGCGAGTGCTGGGTCTGCATGTGTTTCTTTCCATCAGGGGAAAG
-      >>>>>>>>>>>>>>>>>>>>>>>>                                    
-
-  361 ATTTGCCAGTGCATGTTTGAACATCTGCAAGTTTGGGTTTATTTTGGCTCCAAATCTGTA
-                                                                  
-
-  421 TGCAAACTGTTGGTCATAAAGAGTTAGAAGTTCACAGCGAACCTTCCTGAAGCTTCTAGT
-                                                       ******     
-
-  481 TCAGTTTTTAGAGCTTGATGTTGGAAGAGATCTATTTCAGCAGGTGCCTGAAAGTATAGG
-                                                                  
-
-  541 GAGTTCAATATTCTAATTGCGTGTAGTGGCAGCTATTGGTTTAGAGGTAGGTTTAGCAGA
-                            <<<<<<<<<<<<<<<<<<<<<<<<<<<<          
-
-  601 AAAGACATTTTGGATGGGGTCATTTCTGTGCATGTCCTGTGTACACAGGCCTGATTTTAA
-                                                                  
-
-  661 AAGCTATATAGGCCGGGTGGGGTGGCTCACGCCTGTCATCCCAGCAATTTGGGAGGCCGA
-                                                                  
-
-  721 GGTAGGTGGATCACTTGAGGTCAGGAGTTCAAGACCAGCCTGGCCATCATGGTGAAACCC
-                                                                  
-
-  781 TGTCTCTACTAAAAATACAAAAAATTAGCTGGGCGTGGTGGCAGGTGCCTGTAATCCCAG
-                                                                  
-
-  841 CTACTTGGGAAGCTGAGGCAGGAGAATCGCTTAAACCCAGGAAGTGGAGGTTGCAGTGAG
-                                                                  
-
-  901 CAGAGATCACACCATTGCACTCCAGCCTCCGCAATAAGAGTGAAACTCCGTCTGGAAAAC
-                                                                  
-
-  961 AAACAAACAAAAACCTAGATGATGGGGGTGAGGTTAGGGGGATGCTTTTTGGGTTAATAA
-                                                                  
-
- 1021 TTCCTTCAAGGAATAATGTTTGGAGGACAGGGCTTGGAAAAGTGCTAATCCCAGCAAGAG
- ```
+        241 GAGACTTGCAGTATCACAATTAGTGTTCTCTTGCAGCTTGGACTTAACCAGCTTAAATTA
+                                                                    >>>>
+        301 CCATCTGACTGAAGGGTGCGAGTGCTGGGTCTGCATGTGTTTCTTTCCATCAGGGGAAAG
+            >>>>>>>>>>>>>>>>>>>>>>>>                                    
+        361 ATTTGCCAGTGCATGTTTGAACATCTGCAAGTTTGGGTTTATTTTGGCTCCAAATCTGTA
+        421 TGCAAACTGTTGGTCATAAAGAGTTAGAAGTTCACAGCGAACCTTCCTGAAGCTTCTAGT
+                                                             ******     
+        481 TCAGTTTTTAGAGCTTGATGTTGGAAGAGATCTATTTCAGCAGGTGCCTGAAAGTATAGG
+        541 GAGTTCAATATTCTAATTGCGTGTAGTGGCAGCTATTGGTTTAGAGGTAGGTTTAGCAGA
+                                  <<<<<<<<<<<<<<<<<<<<<<<<<<<<          
+        601 AAAGACATTTTGGATGGGGTCATTTCTGTGCATGTCCTGTGTACACAGGCCTGATTTTAA
  
  ___
  control (pair not in contact)
