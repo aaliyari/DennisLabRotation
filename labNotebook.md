@@ -336,10 +336,11 @@ Script Name: detectContacts_intra.py
 
       Usage: ./detectContacts_intra.py -raw <raw Hi-C file> -norm <KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -exp <KRexpected file> -res <resolution>
       
-**Promoter and enhancer BED files should be sorted. If not, sort as follows:**
+**Promoter and enhancer BED files should be sorted. If not:**
 ```sh
 sort -k1,1 -k2,2n file.bed > sorted_file.bed
 ```
+**Also make sure that these BED files don't have any empty lines in the end!**
 
 Example:
 
@@ -353,10 +354,11 @@ Script Name: detectContacts_inter.py
 
       Usage: ./detectContacts_inter.py -raw <raw Hi-C file> -norm1 <1st chr KRnorm file> -norm2 <2nd chr KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -res <resolution>
   
-**Promoter and enhancer BED files should be sorted. If not, sort as follows:**
+**Promoter and enhancer BED files should be sorted. If not:**
 ```sh
 sort -k1,1 -k2,2n file.bed > sorted_file.bed
 ```
+**Also make sure that these BED files don't have any empty lines in the end!**
 
 Example:
 
