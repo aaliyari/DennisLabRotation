@@ -50,7 +50,6 @@ output format: enhancer BED + promoter BED + O/E + HiC line
 chr   start end   chr   start end   O/E   bin_i bin_j no. of contacts
 chr6	159525909   159526201	chr6	159465863	159465874	3.29467895217     159465000.0 159525000.0	73.9561526412
 ```
-## remember to omit -/+ in the code, it's redundant.
 
 - The 6th column in the output file is the observed/expected value for each pair of contacting loci in the Hi-C matrix, which is a measure of the contact's significance. Expected values are provided as a seperate file (*.KRexpected) and are available for intrachromosomal contacts only.
 
