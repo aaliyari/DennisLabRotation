@@ -306,8 +306,8 @@ ___
 
 ## <a name="week5"></a>_Week 5_  
 
-- [ ] Clean up the script: automate everything, user input from terminal etc.
-- [ ] Write a brief manual for the scirpt and add comments for functions
+- [x] Clean up the script: automate everything, user input from terminal etc.
+- [x] Write a brief manual for the scirpt and add comments for functions
 - [ ] Write the rotation report
 - [ ] Practice for the chalk talk on Friday
 
