@@ -340,7 +340,6 @@ Script Name: detectContacts_intra.py
 ```sh
 sort -k1,1 -k2,2n file.bed > sorted_file.bed
 ```
-**Also make sure that these BED files don't have any empty lines in the end!**
 
 Example:
 
@@ -358,7 +357,6 @@ Script Name: detectContacts_inter.py
 ```sh
 sort -k1,1 -k2,2n file.bed > sorted_file.bed
 ```
-**Also make sure that these BED files don't have any empty lines in the end!**
 
 Example:
 
