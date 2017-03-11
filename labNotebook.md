@@ -331,6 +331,8 @@ ___
 
 ## <a name="appendix"></a>_Appendix: How to run the scripts_
 
+# fix -out
+
 Script Name: detectContacts_intra.py
 
       Usage: ./detectContacts_intra.py -raw <raw Hi-C file> -norm <KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -exp <KRexpected file> -res <resolution>
