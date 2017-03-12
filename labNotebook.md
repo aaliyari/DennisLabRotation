@@ -331,11 +331,9 @@ ___
 
 ## <a name="appendix"></a>_Appendix: How to run the scripts_
 
-# fix -out
-
 Script Name: detectContacts_intra.py
 
-      Usage: ./detectContacts_intra.py -raw <raw Hi-C file> -norm <KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -exp <KRexpected file> -res <resolution>
+      Usage: ./detectContacts_intra.py -raw <raw Hi-C file> -norm <KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -exp <KRexpected file> -res <resolution> -out <output file name>
       
 **Promoter and enhancer BED files should be sorted. If not:**
 ```sh
@@ -346,13 +344,13 @@ Example:
 
 - intrachromosomal:
 
-            ./detectContacts_intra.py -raw chr6_5kb.RAWobserved -norm chr6_5kb.KRnorm -enh enhancers.bed -prom promoters.bed -exp chr6_5kb.KRexpected -res 5000
+            ./detectContacts_intra.py -raw chr6_5kb.RAWobserved -norm chr6_5kb.KRnorm -enh enhancers.bed -prom promoters.bed -exp chr6_5kb.KRexpected -res 5000 -out enhPromContacts_chr6_5kb.txt
       
 ___
 
 Script Name: detectContacts_inter.py
 
-      Usage: ./detectContacts_inter.py -raw <raw Hi-C file> -norm1 <1st chr KRnorm file> -norm2 <2nd chr KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -res <resolution>
+      Usage: ./detectContacts_inter.py -raw <raw Hi-C file> -norm1 <1st chr KRnorm file> -norm2 <2nd chr KRnorm file> -enh <enhancers BED file> -prom <promoters BED file> -res <resolution> -out <output file name>
   
 **Promoter and enhancer BED files should be sorted. If not:**
 ```sh
@@ -363,8 +361,11 @@ Example:
 
 - interchromosomal:
 
-            ./detectContacts_inter.py -raw chr1_16_1kb.RAWobserved -norm1 chr1_1kb.KRnorm -norm2 chr16_1kb.KRnorm -enh enhancers.bed -prom promoters.bed -res 1000
+            ./detectContacts_inter.py -raw chr1_16_1kb.RAWobserved -norm1 chr1_1kb.KRnorm -norm2 chr16_1kb.KRnorm -enh enhancers.bed -prom promoters.bed -res 1000 -out enhPromContacts_chr1_16_1kb.txt
       
 ___
 
-Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs and performing differential gene expression anaylysis can be found in genome_wide_Human_NHP.sh
+Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs and performing differential gene expression anaylysis can be found in:
+
+            /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/test.slurm
+
