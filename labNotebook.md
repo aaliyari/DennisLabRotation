@@ -369,3 +369,7 @@ Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs 
 
             /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/test.slurm
 
+### How to convert GTF to BED
+```sh
+fgrep -w transcript file.gtf | sed 's/[";]//g;' | awk '{OFS="\t"; print $1, $4-4,$5,$12,0,$7,$18,$14,$10}' > file.bed
+```
