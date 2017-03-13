@@ -318,10 +318,22 @@ ___
 
             cd /share/dennislab/sequencing/public/Rao_Huntley_2014
 
-2) Find the closest genes to affected promoters using BEDtools
+2) Find the closest genes to affected promoters
 
-            bedtools closest -a promoters -b genes ...
+- Download the hg19 GTF file from [ENSEBML](ftp://ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/)
+- Add "chr" to first column of the GTF file for compatibility with BEDtools:
 
+            awk '$1="chr"$1' hg19.gtf > hg19_chr.gtf
+         
+- Convert to BED (BEDtools closest does not work on GTF format) and sort:
+
+            fgrep -w transcript hg19_chr.gtf | sed 's/[";]//g;' | awk '{OFS="\t"; print $1, $4-4,$5,$12,0,$7,$18,$14,$10}' > hg19_gtf2bed.txt
+            sort -k1,1 -k2,2n hg19_gtf2bed.txt > hg19_gtf2bed_sorted.txt
+            
+- Finally find the closest gene to each promoter using BEDtools closest:
+
+            bedtools closest -a promoters_chr6.txt -b hg19_gtf2bed_sorted.txt > closestGens2promoters_example.txt
+            
 3) Differential gene expression level analysis between human, chimp and rhesus  
 - data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
 
@@ -369,7 +381,3 @@ Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs 
 
             /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/test.slurm
 
-### How to convert GTF to BED
-```sh
-fgrep -w transcript file.gtf | sed 's/[";]//g;' | awk '{OFS="\t"; print $1, $4-4,$5,$12,0,$7,$18,$14,$10}' > file.bed
-```
