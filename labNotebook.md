@@ -335,9 +335,13 @@ ___
             bedtools closest -a promoters_chr6.txt -b hg19_gtf2bed_sorted.txt > closestGens2promoters_example.txt
             
 3) Differential gene expression analysis between human, chimp and rhesus  
-- data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
+- Data from [Cain et al. 2011](http://www.genetics.org/content/187/4/1225.supplemental): [FileS2.xls](http://www.genetics.org/highwire/filestream/412763/field_highwire_adjunct_files/12/FileS2.xls.zip)
 
 4) Looking at the differentially expressed genes associated with HSD enhancers, are the differences statistically significant?
+- Results (p-value < 0.005):
+             
+            /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/p_values_HR (22th column = p-value)
+            /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/p_values_HC (20th column = p-value)
 
 ___
 
@@ -377,7 +381,7 @@ Example:
       
 ___
 
-Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs and performing differential gene expression anaylysis can be found in:
+Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs can be found in:
 
             /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/test.slurm
 
