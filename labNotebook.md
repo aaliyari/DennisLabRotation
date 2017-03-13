@@ -320,7 +320,7 @@ ___
 
 2) Find the closest genes to affected promoters
 
-- Download the hg19 GTF file from [ENSEBML](ftp://ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/)
+- Download the hg19 GTF file from ENSEBML (ftp://ftp.ensembl.org/pub/grch37/release-87/gtf/homo_sapiens/)
 - Add "chr" to first column of the GTF file for compatibility with BEDtools:
 
             awk '$1="chr"$1' hg19.gtf > hg19_chr.gtf
