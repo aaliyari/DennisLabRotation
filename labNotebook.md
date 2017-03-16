@@ -92,7 +92,7 @@ ___
 
 ## <a name="week3"></a>_Week 3_
 
-**Hypothesis:** If the enhancer-promoter pair found in the Hi-C data are really in contact in 3D, we should be able to detect them using PCR amplification in Aarthi's Hi-C Libraries. The primers are desinged based on the 3C protocol: [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
+**Hypothesis:** If the enhancer-promoter pair found in the Hi-C data are really in contact in 3D, we should be able to detect them using PCR amplification in Aarthi's 3C Libraries. The primers are desinged based on the 3C protocol: [Naumova et al. 2012](http://www.sciencedirect.com/science/article/pii/S1046202312001788)
 
 ### Experimental Design:
 
@@ -113,9 +113,9 @@ ___
       Control Promoter #2 = [chr6:13274087-13274115]  
       
       
-- **Aarthi's Hi-C Library**
+- **Aarthi's 3C Library**
 
-       Ask Aarthi for a description!
+       LCL digested with HindIII (one human cell line and one chimp)
    
 ### Steps:
 
@@ -137,15 +137,15 @@ recommend checking the uniqueness of each primer."
             Expected result: should amplify!
             Observed result: they did!
            
-- [x] 3) Do one primer-free PCR for control
+- [x] 3) Do template-free PCRs for control
             
             Expected result: nothing should amplify!
             Observed result: nothing amplified!
                  
-- [x] 4) PCR uni-directional primers for each enhancer-promoter pair using Aarthi's Hi-C Libary:
+- [x] 4) PCR uni-directional primers for each enhancer-promoter pair using Aarthi's 3C Libary:
             
             Expected result: should see some amplification
-            Observed result: TBD
+            Observed result: nothing amplified :(
 
 
 ### Primer Design
@@ -293,8 +293,7 @@ ____
                                                               
 ## <a name="week4"></a>_Week 4_
 
-Do the experiments..
-
+Did the experiments..
 ___
 
 ## <a name="week5"></a>_Week 5_  
@@ -302,7 +301,7 @@ ___
 - [x] Clean up the script: automate everything, user input from terminal etc.
 - [x] Write a brief manual for the scirpt and add comments for functions
 - [ ] Write the rotation report
-- [ ] Practice for the chalk talk
+- [x] Practice for the chalk talk
 
 ### Bonus computational task
            
