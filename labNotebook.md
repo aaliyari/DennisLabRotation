@@ -39,13 +39,9 @@ GEO accesion link: [GSE63525](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc
 Each entry M_ij of the raw Hi-C matrix should be divided by its corresponding values in the normalization vector file (*.KRnorm)
 ```
 - For details, please see this [readme](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE63525&format=file&file=GSE63525%5FGM12878%5Fcombined%5FREADME%2Ertf), available in the above mentioned GEO link.
-```
-function: normalize_HiC(HiC_raw_file, KRnorm_file, resolution) in dennisLab.py
-```
 
 - [x] Find the number of contacts between each pair of promoters and enhancers using the normalized Hi-C matrix
 ```
-function: blahblah(..) in dennisLab.py
 output format: enhancer BED + promoter BED + O/E + HiC line
 chr   start end   chr   start end   O/E   bin_i bin_j no. of contacts
 chr6	159525909   159526201	chr6	159465863	159465874	3.29467895217     159465000.0 159525000.0	73.9561526412
@@ -299,8 +295,6 @@ ____
 
 Do the experiments..
 
-Add some results here..
-
 ___
 
 ## <a name="week5"></a>_Week 5_  
@@ -308,7 +302,7 @@ ___
 - [x] Clean up the script: automate everything, user input from terminal etc.
 - [x] Write a brief manual for the scirpt and add comments for functions
 - [ ] Write the rotation report
-- [ ] Practice for the chalk talk on Friday
+- [ ] Practice for the chalk talk
 
 ### Bonus computational task
            
@@ -383,5 +377,5 @@ ___
 
 Bash scripts for finding the genome wide enhancer-promoter contacts due to HSDs can be found in:
 
-            /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/test.slurm
+            /share/dennislab/sequencing/public/Rao_Huntley_2014/findAllContacts_diff_RNA/job.slurm
 
