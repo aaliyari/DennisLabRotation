@@ -73,18 +73,18 @@ Duplication -> chr16:33,293,711-33,465,325
 ```
 - Input:  
 
-  1) DUSP22 HSD enhancers on chr6 (BED format)  
-  2) All promoters on chr16 from FANTOM (BED format)  
-  3) Hi-C raw matrix (.RAWobserved)  
-  4) Normalization vectors for both chromosomes (.KRnorm)  
+ 1) DUSP22 HSD enhancers on chr6 (BED format)  
+ 2) All promoters on chr16 from FANTOM (BED format)  
+ 3) Hi-C raw matrix (.RAWobserved)  
+ 4) Normalization vectors for both chromosomes (.KRnorm)  
 
 - Output:  
 
-      **Interacting enhancer-promoter pairs!**
+     **Interacting enhancer-promoter pairs!**
 
 - Result:  
 
-      **There are enhancers in the DUSP22b HSD region on chr16 that show faint contacts with a few promoters near GRIN2A gene on chr16, which is an autism-related gene! (They are ~10Mb apart, so no reason to get super excited.)**
+**There are enhancers in the DUSP22b HSD region on chr16 that show faint contacts with a few promoters near GRIN2A gene on chr16, which is an autism-related gene! (They are ~10Mb apart, so no reason to get super excited.)**
 ```      
 What's next? Design primers to validate this finding: Is this enhancer-promoter pair really in contact in vitro?
 ```
